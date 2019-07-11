@@ -13,7 +13,7 @@ In <a href="http://openaccess.thecvf.com/content_cvpr_2016/papers/Yang_Object_Co
 | Method |Original Motivation|ODS F-score|OIS F-score|AP|
 |:---|:---|:---|:---|:---|
 | CNet(Ours) |Contour Detection|0.404|0.509|0.373|
-| CEDN |Contour Detection|0.486(in the same environment),0.57(in CEDN papers)|0.5(in the same environment), -|0.354(in the same environment), -|
+| CEDN |Contour Detection|0.486(in the same environment),0.57(in CEDN paper)|0.5(in the same environment), -|0.354(in the same environment), -|
 | RCF |Edge Detection|0.459(in my implement and training)|0.475(in my implement and training)|0.333(in my implement and training)|
 | HED |Edge Detection|0.441(in my implement and training)|0.454(in my implement and training)|0.311(in my implement and training)|
 
@@ -21,3 +21,6 @@ In <a href="http://openaccess.thecvf.com/content_cvpr_2016/papers/Yang_Object_Co
 pytorch-1.0.0
 numpy
 PIL
+
+### Thanks
+Thanks to <a href="https://github.com/meteorshowers">XuanYi Li</a>, <a href="https://github.com/shenwei1231">Wei Shen</a>.
