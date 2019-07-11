@@ -16,6 +16,7 @@ In <a href="http://openaccess.thecvf.com/content_cvpr_2016/papers/Yang_Object_Co
 | CEDN |Contour Detection|0.486(in the same environment),0.57(in CEDN paper)|0.5(in the same environment), -|0.354(in the same environment), -|
 | RCF |Edge Detection|0.459(in my implement and training)|0.475(in my implement and training)|0.333(in my implement and training)|
 | HED |Edge Detection|0.441(in my implement and training)|0.454(in my implement and training)|0.311(in my implement and training)|
+
 note: The same environment means the same data augmentation, the same framework, the same time seed and so on.
 
 ### Environment
