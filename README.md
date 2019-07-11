@@ -18,9 +18,7 @@ In <a href="http://openaccess.thecvf.com/content_cvpr_2016/papers/Yang_Object_Co
 | HED |Edge Detection|0.441(in my implement and training)|0.454(in my implement and training)|0.311(in my implement and training)|
 
 ### Environment
-pytorch-1.0.0
-numpy
-PIL
+pytorch-1.0.0, numpy, PIL
 
 ### Thanks
 Thanks to <a href="https://github.com/meteorshowers">XuanYi Li</a>, <a href="https://github.com/shenwei1231">Wei Shen</a>.
