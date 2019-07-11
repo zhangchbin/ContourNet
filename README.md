@@ -24,3 +24,6 @@ pytorch-1.0.0, numpy, PIL
 
 ### Thanks
 Thanks to <a href="https://github.com/meteorshowers">XuanYi Li</a>, <a href="https://github.com/shenwei1231">Wei Shen</a>.
+
+### Connect
+zhangchbin AT gmail.com
