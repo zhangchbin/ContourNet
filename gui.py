@@ -1,25 +1,25 @@
 # coding = utf-8
 import tensorflow as tf
 import matplotlib.pyplot as plt
-# 创建GUI窗口打开图像 并显示在窗口中
+# create GUI
 
-from PIL import Image, ImageTk  # 导入图像处理函数库
-import tkinter as tk  # 导入GUI界面函数库
+from PIL import Image, ImageTk 
+import tkinter as tk  
 import tkinter.filedialog
 from control import control
 
-# 创建窗口 设定大小并命名
+# set the window, size, name
 window = tk.Tk()
-window.title('图像显示界面')
+window.title('image show window')
 window.geometry('600x500')
-global img_png  # 定义全局变量 图像的
+global img_png  # denote the image
 global filename
 global gt_png
 global res_png
-var = tk.StringVar()  # 这时文字变量储存器
+var = tk.StringVar()  # text 
 con = control()
 
-# 创建打开图像和显示图像函数
+# open the image and show it
 def Open_Img():
     global img_png
     global filename
@@ -53,7 +53,7 @@ def Open_Img():
 
 def Show_Img():
     global img_png
-    var.set('Compute completed!')  # 设置标签的文字为 'you hit me'
+    var.set('Compute completed!')  # set the name as 'you hit me'
     label_Img = tk.Label(window, image=img_png)
     label_Img.pack(side='left')
     label_Img2 = tk.Label(window, image=img_png)
@@ -68,23 +68,22 @@ def askFile():
         Open_Img()
 
 
-# 创建文本窗口，显示当前操作状态
+# create text window
 Label_Show = tk.Label(window,
-                      textvariable=var,  # 使用 textvariable 替换 text, 因为这个可以变化
+                      textvariable=var,  
                       bg='blue', font=('Arial', 12), width=15, height=2)
 Label_Show.pack()
-# 创建打开图像按钮
-btn_Open = tk.Button(window,
-                     text='选择图片',  # 显示在按钮上的文字
-                     width=15, height=2,
-                     command=askFile)  # 点击按钮式执行的命令
-btn_Open.pack()  # 按钮位置
-# 创建显示图像按钮
-btn_Show = tk.Button(window,
-                     text='计算轮廓',  # 显示在按钮上的文字
-                     width=15, height=2,
-                     command=Show_Img)  # 点击按钮式执行的命令
-btn_Show.pack()  # 按钮位置
 
-# 运行整体窗口
+btn_Open = tk.Button(window,
+                     text='select the image',  
+                     width=15, height=2,
+                     command=askFile)  
+btn_Open.pack()  
+
+btn_Show = tk.Button(window,
+                     text='run',  
+                     width=15, height=2,
+                     command=Show_Img) 
+btn_Show.pack() 
+
 window.mainloop()
